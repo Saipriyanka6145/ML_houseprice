@@ -67,23 +67,18 @@
 
 <body>
  <div class="login">
-	<h1>Boston House Price Prediction</h1>
+	<h1>House Price Prediction</h1>
 
      <!-- Main Input For Receiving Query to our ML -->
     <form action="{{ url_for('predict')}}"method="post">
-      <input type="text" name="CRIM" placeholder="CRIM" required="required" /><br>
-    	<input type="text" name="ZN" placeholder="ZN" required="required" /><br>
-        <input type="text" name="INDUS" placeholder="INDUS" required="required" /><br>
-        <input type="text" name="CHAS" placeholder="CHAS" required="required" /><br>
-        <input type="text" name="NOX" placeholder="NOX" required="required" /><br>
-        <input type="text" name="RM" placeholder="RM" required="required" /><br>
-        <input type="text" name="Age" placeholder="Age" required="required" /><br>
-        <input type="text" name="DIS" placeholder="DIS" required="required" /><br>
-        <input type="text" name="RAD" placeholder="RAD" required="required" /><br>
-        <input type="text" name="TAX" placeholder="TAX" required="required" /><br>
-        <input type="text" name="PTRATIO" placeholder="PTRATIO" required="required" /><br>
-        <input type="text" name="B" placeholder="B" required="required" /><br>
-        <input type="text" name="LSTAT" placeholder="LSTAT" required="required" /><br>
+      <input type="text" name="MedInc" placeholder="Median Income (e.g. 3.5)" required="required" /><br>
+    	<input type="text" name="HouseAge" placeholder="House Age in Years (e.g. 20)" required="required" /><br>
+        <input type="text" name="AveRooms" placeholder="Avg Rooms per House (e.g. 5.0)" required="required" /><br>
+        <input type="text" name="AveBedrms" placeholder="Avg Bedrooms per House (e.g. 1.0)" required="required" /><br>
+        <input type="text" name="Population" placeholder="Block Population (e.g. 800)" required="required" /><br>
+        <input type="text" name="AveOccup" placeholder="Avg Occupants per House (e.g. 3.0)" required="required" /><br>
+        <input type="text" name="Latitude" placeholder="Latitude (e.g. 34.05)" required="required" /><br>
+        <input type="text" name="Longitude" placeholder="Longitude (e.g. -118.25)" required="required" /><br>
 
        
 
